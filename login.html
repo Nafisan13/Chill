@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - CHILL</title>
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="icon" href="./images/Logo-nav.png" type="image/png" /> 
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+  </head>
+  <body>
+    <section class="card">
+      <div class="card-content">
+        <div class="logo">
+          <img src="images/Logo-nav.png" alt="" />
+          <h2>CHILL</h2>
+        </div>
+        <div class="text">
+          <h4>Masuk</h4>
+          <p>Selamat datang kembali!</p>
+        </div>
+        <form action="">
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Masukkan username"
+              autocomplete="off"
+            />
+          </div>
+          <div class="input-group">
+            <label for="password">Kata Sandi</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Masukkan Kata Sandi"
+              autocomplete="off"
+            />
+            <i class="ph-fill ph-eye-slash"></i>
+          </div>
+          <div class="daftar-cta">
+            <div>
+              <p>Belum punya akun?</p>
+              <a href="register.html">Daftar</a>
+            </div>
+            <a href="#">Lupa Kata Sandi?</a>
+          </div>
+          <div class="masuk-btn">
+            <button type="submit" class="btn-login">Masuk</button>
+            <p>Atau</p>
+            <button>
+              <img src="./images/icon/google.png" alt="" />Masuk dengan Google
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

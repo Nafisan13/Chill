@@ -1,0 +1,265 @@
+@import url('./global.css');
+
+body, html {
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    background: url('../images/bg/masuk-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.69);
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 306px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card .logo img {
+    width: 27px;
+    height: auto;
+}
+
+.card .logo h2 {
+    font-size: 30px;
+    font-family: 'Londrina Solid', "cursive";
+    font-weight: 500;
+}
+
+.card .card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .card-content .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    margin-bottom: 20px;
+    gap: 3px;
+}
+
+.card .card-content .text {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.card .card-content .text h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card .card-content .text p {
+    font-size: 10px;
+    opacity: 0.8;
+}
+
+.card .card-content form {
+    width: 100%;
+}
+
+.card .card-content .input-group {
+    font-size: 11px;
+    text-align: left;
+}
+
+.card .card-content form:last-child .input-group {
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.card .card-content form:last-child .input-group i {
+    position: absolute;
+    top: 32px;
+    right: 13px;
+    color: #9D9EA1;
+    font-size: medium;
+}
+
+.card .card-content form .daftar-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11px;
+    margin-bottom: 1rem;
+    color: #C1C2C4;
+}
+
+.card .card-content form .daftar-cta div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.card input[type="text"],
+.card input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin: 7px 0px;
+    background-color: transparent;
+    border: 1px solid #e7e3fc2f;
+    border-radius: 16px;
+    color: #fff;
+}
+
+.card input[type="text"]::placeholder,
+.card input[type="password"]::placeholder {
+    font-size: 9px;
+    color: #C1C2C4;
+}
+
+.card input[type="text"]:focus,
+.card input[type="password"]:focus {
+    outline: none;
+    border-color: #494949;
+}
+
+.card button:first-child {
+    width: 100%;
+    padding: 10px;
+    background-color: #3D4142;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: all .3s ease;
+    border: 1px solid #e7e3fc2f;
+    border-radius: 16px;
+
+}
+
+.card button:last-child {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 1px solid #e7e3fc2f;
+    transition: all .3s ease;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.card button:last-child img {
+    width: 10px;
+    height: 10px;
+}
+
+.card button:hover {
+    background-color: #000;
+}
+.card a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+.card a:hover {
+    text-decoration: underline;
+}
+
+.card .card-content .masuk-btn p{
+    font-size: 10px;
+    color: #C1C2C4;
+}
+
+
+/* === RESPONSIVE DESKTOP STYLE === */
+@media only screen and (min-width: 768px) {
+    body, html {
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .card {
+        width: 400px; /* Lebar lebih besar di desktop */
+        padding: 32px;
+        border-radius: 12px;
+    }
+
+    .card .logo img {
+        width: 50px;
+        height: 30px;
+    }
+
+    .card .logo h2 {
+        font-size: 36px;
+    }
+
+    .card .card-content .text {
+        font-size: 15px;
+    }
+
+    .card .card-content .text h4 {
+        font-size: 22px;
+    }
+
+    .card input[type="text"],
+    .card input[type="password"] {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    .card input[type="text"]::placeholder,
+    .card input[type="password"]::placeholder {
+        font-size: 11px;
+    }
+
+    .card button:first-child,
+    .card button:last-child {
+        font-size: 12px;
+        padding: 12px;
+        border-radius: 20px;
+    }
+
+    .card .card-content .masuk-btn p {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .card {
+        width: 400px;
+        padding: 40px;
+    }
+
+    .card .logo h2 {
+        font-size: 40px;
+    }
+
+    .card input[type="text"],
+    .card input[type="password"] {
+        font-size: 14px;
+    }
+
+    .card .card-content .text h4 {
+        font-size: 24px;
+    }
+}
